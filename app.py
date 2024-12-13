@@ -18,7 +18,7 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(120), nullable=False)
     subscription_status = db.Column(db.Boolean, default=False)
     ideas = db.relationship('Idea', backref='author', lazy=True)
-
+#1111
 class Idea(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
