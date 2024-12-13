@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Share Your Idea</h1>
+    <form method="POST">
+        <div>
+            <label>Title:</label>
+            <input type="text" name="title" required>
+        </div>
+        <div>
+            <label>Content:</label>
+            <textarea name="content" required></textarea>
+        </div>
+        <button type="submit">Share</button>
+    </form>
+</div>
+{% endblock %} 
